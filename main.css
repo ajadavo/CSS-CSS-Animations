@@ -27,6 +27,8 @@ html {
   width: 30%;
   margin: 5px  auto;
   display: inline-block;
+  opacity:0.5;
+  transform:translate(150px)
 
 }
 /****************************************
@@ -36,6 +38,12 @@ html {
 .transition-demo img {
   width: 200px;
   height: 200px;
+  filter:grayscale(100%);
+  transition:5s;
+}
+.transition-demo img:hover{
+  filter:none;
+  transform:scale(1.5) rotate:(90deg);
 }
 
 .cards {
